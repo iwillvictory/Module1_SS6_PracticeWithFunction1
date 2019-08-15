@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2</title>
+    <script>
+        function increase(){
+            let value= parseInt(document.getElementById("input").value);
+            document.getElementById("result").innerHTML=++value +"";
+        }
+    </script>
+</head>
+<body>
+<input type="number" id="input" /> <button type="button" onclick="increase()">Increase By 1</button>
+<br/>
+Result : <span id="result"></span>
+</body>
+</html>

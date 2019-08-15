@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 3</title>
+    <script>
+        function process(number1,number2){
+            number1=parseInt(number1);
+            number2=parseInt(number2);
+            if(!isNaN(number1) && !isNaN(number2)){
+                if(number1 > number2){
+                    alert("Number 1 more than Number 2");
+                }else{
+                    document.getElementById("result").textContent=number2+number1;
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+Number 1 : <input type="number" id="num1" onchange="process(this.value,document.getElementById('num2').value)"/> <br/>
+Number 2 : <input type="number" id="num2" onchange="process(document.getElementById('num1').value,this.value)"/> <br/>
+Sum      : <span id="result"></span>
+</body>
+</html>
